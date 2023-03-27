@@ -61,4 +61,18 @@ for (let i = 0; i < images.length; i++) {
     img.src = images[i].url;
     img.alt = images[i].caption;
     gallery.appendChild(img);
-  }
+}
+
+gallery.addEventListener("click", function(event) {
+    if (event.target.tagName === "IMG") {
+        modal.style.display = "flex";
+        modalImage.src = event.target.src;
+        modalCaption.textContent = event.target.alt;
+    }
+});
+
+if closeButton = document.getElementById("close");
+
+closeButton.addEventListener("click", function() {
+  modal.style.display = "none";
+});
