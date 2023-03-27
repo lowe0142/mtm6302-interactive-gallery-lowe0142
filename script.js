@@ -71,7 +71,7 @@ gallery.addEventListener("click", function(event) {
     }
 });
 
-if closeButton = document.getElementById("close");
+let closeButton = document.getElementById("close");
 
 closeButton.addEventListener("click", function() {
   modal.style.display = "none";
