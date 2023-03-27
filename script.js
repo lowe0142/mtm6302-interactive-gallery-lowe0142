@@ -49,3 +49,16 @@ let images =  [
         description: "Image 12"
     }
 ];
+
+let gallery = document.getElementById("gallery");
+let modal = document.getElementById("modal");
+let modalImageContainer = document.getElementById("modal-img-container");
+let modalImage = document.getElementById("modal-img");
+var modalDescription = document.getElementById("modal-description");
+
+for (let i = 0; i < images.length; i++) {
+    let img = document.createElement("img");
+    img.src = images[i].url;
+    img.alt = images[i].caption;
+    gallery.appendChild(img);
+  }
