@@ -2,51 +2,51 @@
 let images =  [
     {
         url: "images/img1.jpg",
-        description: "Image 1"
+        description: "Lucy"
     },
     {
         url: "images/img2.jpg",
-        description: "Image 2"
+        description: "Paws"
     },
     {
         url: "images/img3.jpg",
-        description: "Image 3"
+        description: "Carol and Sue"
     },
     {
         url: "images/img4.jpg",
-        description: "Image 4"
+        description: "Beth and Moe"
     },
     {
         url: "images/img5.jpg",
-        description: "Image 5"
+        description: "Louis"
     },
     {
         url: "images/img6.jpg",
-        description: "Image 6"
+        description: "Cupcake"
     },
     {
         url: "images/img7.jpg",
-        description: "Image 7"
+        description: "Earl"
     },
     {
         url: "images/img8.jpg",
-        description: "Image 8"
+        description: "Lilli, Oreo and Mouse"
     },
     {
         url: "images/img9.jpg",
-        description: "Image 9"
+        description: "Fluffy, Snowflake and Blue"
     },
     {
         url: "images/img10.jpg",
-        description: "Image 10"
+        description: "The Little Crew"
     },
     {
         url: "images/img11.jpg",
-        description: "Image 11"
+        description: "Garfield"
     },
     {
         url: "images/img12.jpg",
-        description: "Image 12"
+        description: "Lenny"
     }
 ];
 
@@ -59,7 +59,7 @@ var modalDescription = document.getElementById("modal-description");
 for (let i = 0; i < images.length; i++) {
     let img = document.createElement("img");
     img.src = images[i].url;
-    img.alt = images[i].caption;
+    img.alt = images[i].description;
     gallery.appendChild(img);
 }
 
@@ -67,7 +67,7 @@ gallery.addEventListener("click", function(event) {
     if (event.target.tagName === "IMG") {
         modal.style.display = "flex";
         modalImage.src = event.target.src;
-        modalCaption.textContent = event.target.alt;
+        modalDescription.textContent = event.target.alt;
     }
 });
 
