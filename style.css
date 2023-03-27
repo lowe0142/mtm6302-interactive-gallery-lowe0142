@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     justify-content: center;
     background-color: lightgoldenrodyellow;
-    border: solid  black;
+    border: solid 4px black;
 }
   
   #gallery img {
