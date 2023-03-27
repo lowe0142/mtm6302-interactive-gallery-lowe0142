@@ -1,4 +1,4 @@
-//Gallery Image Array// 
+//Gallery Image Array (Images from Pexels.com)// 
 let images =  [
     {
         url: "images/img1.jpg",
