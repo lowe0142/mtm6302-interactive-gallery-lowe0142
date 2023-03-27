@@ -3,15 +3,24 @@
     flex-wrap: wrap;
     justify-content: center;
     background-color: lightgoldenrodyellow;
-  }
+}
   
   #gallery img {
     width: 900px;
     height: auto;
     margin: 10px;
     cursor: pointer;
-  }
+}
   
+  #modal-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
   #modal {
     position: fixed;
     top: 0;
@@ -21,16 +30,9 @@
     background-color: rgba(0, 0, 0, 1);
     justify-content: center;
     align-items: center;
-  }
+}
   
-  #modal-img-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height: 80%;
-    margin: auto;
-  }
+ 
   
   #modal-img {
     max-width: 80%;
@@ -39,7 +41,7 @@
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-  }
+}
   
   #modal-description {
     position: absolute;
@@ -54,7 +56,7 @@
     font-size: 40px;
     border: solid white;
     border-radius: 1.5rem;
-  }
+}
   
   /* The Close Button */
   .close {
@@ -64,17 +66,17 @@
     color: snow;
     font-size: 60px;
     font-weight: bold;
-  }
+}
   
   .close:hover,
   .close:focus {
     color: red;
     cursor: pointer;
-  }
+}
   
   /* 100% Image Width on Smaller Screens */
   @media only screen and (max-width: 700px){
     .modal-content {
       width: 100%;
     }
-  }
+}
